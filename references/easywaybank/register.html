@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" th:href="@{css/bootstrap/bootstrap.css}" />
+  <link rel="stylesheet" th:href="@{css/fontawesome/css/all.css}" />
+  <link rel="stylesheet" th:href="@{css/default.css}" />
+  <title>Register</title>
+</head>
+
+<body class="d-flex align-items-center justify-content-center">
+  <!-- Card : Registration Form Card -->
+  <div class="card registation-form-card col-6 bg-transparent border-0">
+    <!-- Card Body -->
+    <div class="card-body">
+      <!-- Form Header -->
+      <h1 class="form-header card-title mb-3">
+        <i class="fa fa-edit"></i> Register
+      </h1>
+      <!-- End of Form Header -->
+
+      <!-- Registration Form -->
+      <form th:action="@{/register}" class="reg-form" modelAttribute="registerUser" method="post">
+        <!-- Row -->
+        <div class="row">
+          <!-- Fist Name Form Group -->
+          <div class="form-group col">
+            <input type="text" name="first_name" class="form-control form-control-lg" placeholder="Enter First Name" />
+          </div>
+          <!-- End of First Name Form Group -->
+          <!-- Last Name Form Group -->
+          <div class="form-group col">
+            <input type="text" name="last_name" class="form-control form-control-lg" placeholder="Enter Last Name" />
+          </div>
+          <!-- End of Last Name Form Group -->
+        </div>
+        <!-- End of Row -->
+        <!-- Email Form Group -->
+        <div class="form-group col">
+          <input type="email" name="email" class="form-control form-control-lg" placeholder="Enter Your Email" />
+        </div>
+        <!-- End of Email Form Group -->
+        <!-- Row -->
+        <div class="row">
+          <!-- Password Form Group -->
+          <div class="form-group col">
+            <input type="password" name="password" class="form-control form-control-lg" placeholder="Enter Password" />
+          </div>
+          <!-- End of Password Form Group -->
+          <!-- Confirm-Password Form Group -->
+          <div class="form-group col">
+            <input type="password" name="confirm_password" class="form-control form-control-lg"
+              placeholder="Confirm Password" />
+          </div>
+          <!-- End of Confirm-Password Form Group -->
+        </div>
+        <!-- End of Row -->
+        <!-- Button Register Form Group -->
+        <div class="form-group col">
+          <button class="btn btn-lg" type="submit">Register</button>
+        </div>
+        <!-- End of Button Register Form Group -->
+      </form>
+      <!-- End of Registration Form -->
+
+      <!-- Card Text -->
+      <p class="card-text text-white my-2">
+        Already have an account?
+        <span class="ms-2">
+          <a th:href="@{/login}" class="btn bt-sm text-warning"> Sign In </a>
+        </span>
+      </p>
+      <!-- End of Card Text -->
+
+      <!-- Back Button To Landing Page -->
+      <small class="text-warning">
+        <i class="fa fa-arrow-alt-circle-left"></i>
+        <a th:href="@{/index}" class="btn btn-sm text-warning">Back</a>
+      </small>
+      <!-- End of Back Button To Landing Page -->
+    </div>
+  </div>
+  <!-- Card : Registration Form Card -->
+</body>
+
+</html>

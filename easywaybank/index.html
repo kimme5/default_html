@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.css}">
+  <link rel="stylesheet" th:href="@{/css/fontawesome/css/all.css}">
+  <link rel="stylesheet" th:href="@{/css/default.css}">
+  <title>Home</title>
+</head>
+
+<body class="d-flex align-items-center">
+  <!-- Card : Sample Text  -->
+  <div id="sample-text-card" class="card col-6 bg-transparent border-0">
+    <!-- Card
+    Body -->
+    <div class="card-body">
+      <!-- Card Header -->
+      <h1 class="mb-3">Easy-Way Bank</h1>
+      <!-- End Card Header -->
+
+      <!-- Card Title -->
+      <h4 class="card-title">Flexible Banking Solutions</h4>
+      <!-- End of Card Title -->
+
+      <!-- Card Text -->
+      <p class="card-text">
+        <!-- lorem50 -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        nisi obcaecati laborum! Debitis saepe ut consectetur aut quibusdam
+        sint? Quibusdam dolor illum perspiciatis vitae velit! Recusandae
+        quaerat necessitatibus molestias repellat sit voluptatum amet modi
+        dolorum doloremque quidem similique, laudantium cum nulla, dolore
+        labore error saepe aspernatur! Aut deleniti cupiditate accusamus.
+      </p>
+      <!-- End of Card Text -->
+
+      <!-- Button Wrapper -->
+      <div class="button-wrapper d-flex align-items-center">
+        <a th:href="@{/register}" class="btn btn-md register" role="button">Register</a>
+        <a th:href="@{/login}" class="btn btn-md login" role="button">Login</a>
+      </div>
+      <!-- End of Button Wrapper -->
+    </div>
+    <!-- End of Card Body -->
+  </div>
+  <!-- End of Card : Sample Text  -->
+</body>
+
+</html>
