@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  /* Centring content */
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+.container {
+  margin: 10px auto;
+}
+
+/* Adapts a floating label for use with a left-handed input group icon */
+.form-floating > .bi-calendar-date + .datepicker_input + label {
+  padding-left: 3.5rem;
+  z-index: 3;
+}

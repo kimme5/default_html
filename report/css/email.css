@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+/* Main Body Styling */
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #fdfcfb, #e2d1c3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* <!-- Wrapper --> */
+.wrapper {
+  width: 550px;
+  height: auto;
+  padding: 15px;
+  background-color: white;
+  border-radius: 7px;
+}
+
+/* <!-- Email Message Header --> */
+.email-msg-header {
+  text-align: center;
+}
+
+/* <!-- Company Name --> */
+.company-name {
+  width: 100%;
+  font-size: 35px;
+  color: gray;
+  text-align: center;
+  font-family: Pacifico;
+}
+
+/* <!-- Welcome Text --> */
+.welcome-text {
+  text-align: center;
+  font-size: 15px;
+}
+
+.verify-account-btn {
+  padding: 15px;
+  background-color: rgb(0, 109, 225);
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgb(0, 14, 53);
+}
+
+/* <!-- Copy Right Wrapper --> */
+.copy-right {
+  text-align: center;
+  padding: 15px;
+  color: gray;
+  font-size: 12px;
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

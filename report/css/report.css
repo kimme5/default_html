@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+/** Main Body Style */
+body {
+  background-color: rgb(201, 210, 218);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body {
+  /* Centring content */
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  height: 100vh;
+  margin: 10px auto;
+}
+.search-form-card {
+  font-size: 9px;
+}
+#divgrid {
+  height: 400px;
+  margin: 10px auto;
+}
+
+/* Adapts a floating label for use with a left-handed input group icon */
+.form-floating > .bi-calendar-date + .datepicker_input + label {
+  padding-left: 3.5rem;
+  z-index: 3;
+}
+
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: Tahoma, 'Segoe UI', 'Malgun Gothic', sans-serif;
+  font-size: 8px;
+}
+
+@media only screen and (max-width: 800px) {
+  #demo2 {
+    display: block;
+    width: 100%;
+    margin: 0 -10px;
+  }
+  #demo2 thead {
+    display: block;
+    float: left;
+    overflow-x: scroll;
+  }
+  #demo2 tbody {
+    display: block;
+    width: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  #demo2 th {
+    display: block;
+    width: auto;
+  }
+  #demo2 tbody tr {
+    display: inline-block;
+    margin: 0 -3px;
+  }
+  #demo2 td {
+    display: block;
+  }
+}
+
+a {
+  width: 80px;
+}
+
+select {
+  display: none;
+  appearance: none;
+  box-sizing: border-box;
+  /* 배경색 투명 처리 */
+  background: transparent;
+}

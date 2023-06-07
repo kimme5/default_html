@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+    <link rel="stylesheet" href="css/mandalart.css" />
+    <title>만다라트 계획표</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="cell-1 col-sm-4">범위 관리</div>
+        <div class="cell-2 col-sm-4">일정 관리</div>
+        <div class="cell-3 col-sm-4">의사소통 관리</div>
+      </div>
+      <div class="row">
+        <div class="cell-4 col-sm-4">품질 관리</div>
+        <div class="cell-5 col-sm-4">프로젝트 완수</div>
+        <div class="cell-6 col-sm-4">이슈 관리</div>
+      </div>
+      <div class="row">
+        <div class="cell-7 col-sm-4">비용 관리</div>
+        <div class="cell-8 col-sm-4">인력 관리</div>
+        <div class="cell-9 col-sm-4">기타 관리</div>
+      </div>
+    </div>
+
+    <div class="container modal">
+      <div class="card card-body">
+        <div class="title-form-card mb-3">
+          <!-- Form Header -->
+          <h3 class="form-header card-title"><i class="fa fa-edit"></i> 프로젝트 등록</h3>
+          <hr />
+          <!-- End of Form Header -->
+        </div>
+
+        <div class="body-form-card border">
+          <!-- Registration Form -->
+          <form action="" class="reg-form" modelAttribute="registerTarget" method="post">
+            <div class="row">
+              <!-- Project Name Form Group -->
+              <div class="col-sm-3 my-2">
+                <label for="" class="form-group">Project Name: </label>
+              </div>
+              <div class="col-sm-9 my-2">
+                <input type="text" class="form-control" name="target-name" placeholder="Enter Project Name" />
+              </div>
+              <!-- End of Email Form Group -->
+            </div>
+          </form>
+        </div>
+        <!-- End of Registration Form -->
+        <div class="content">
+          <h4>로그인하세요</h4>
+        </div>
+        <!-- Button Register Form Group -->
+        <div class="form-group col">
+          <button class="btn btn-primary" type="submit">Save</button>
+          <button class="btn btn-danger" id="close">Close</button>
+        </div>
+        <!-- End of Button Register Form Group -->
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/mandalart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+/* Main Body Styling */
+body {
+  background-color: rgb(224, 217, 226);
+  /* background-image: linear-gradient(to bottom right, #fdfcfb, #e2d1c3);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; */
+}
+
+.container {
+  margin: 10px auto;
+}
+
+/* <!-- Main Page Header --> */
+.main-page-header {
+  padding: 10px 0px;
+  background-image: linear-gradient(to bottom right, #00c0ff, #4218b8);
+}
+
+/* <!-- Company Name --> */
+.main-page-header .company-name {
+  font-family: Pacifico;
+  /* font-family: "Shrikhand"; */
+  /* font-weight: 600; */
+  font-size: 14px;
+  color: white;
+}
+
+/* <!-- Navigation --> */
+.navigation {
+  /* border: 1px solid white; */
+  margin-left: 20px;
+}
+
+.navigation li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0px 15px;
+}
+
+.navigation li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* <!-- Display Name --> */
+.display-name i {
+  /* box-shadow: 0px 3px 6px rgb(0, 14, 53); */
+  font-weight: 600;
+}
+
+#transact-btn {
+  background-color: #ffb114;
+  border: 1px solid #543800;
+}
+
+/* Add Account Button */
+#add-account-btn {
+  background-color: #ff4e00;
+  border: #882b00;
+  color: white;
+}
+
+/* Offcanvas Background */
+.offcanvas {
+  background-image: linear-gradient(to bottom right, #00c0ff, #4218b8);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.transact-btn {
+  background-color: #ff4e00;
+  border: #882b00;
+  color: white;
+}
+
+/* <!-- Card: payment Card --> */
+.payment-card {
+  display: none;
+}
+
+/* <!-- Card: transfer Card --> */
+.transfer-card {
+  display: none;
+}
+
+/* <!-- Card: deposit Card --> */
+.deposit-card {
+  display: none;
+}
+
+/* <!-- Card: withdraw Card --> */
+.withdraw-card {
+  display: none;
+}

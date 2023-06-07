@@ -1,0 +1,11 @@
+* {
+  /* 지정한 width 및 height 크기가 모든 box-model의 합계로 지정 */
+  box-sizing: border-box;
+}
+
+body {
+  /* Centring content */
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
